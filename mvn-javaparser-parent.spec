@@ -4,11 +4,12 @@
 #
 Name     : mvn-javaparser-parent
 Version  : 2.4.0
-Release  : 1
+Release  : 2
 URL      : https://github.com/javaparser/javaparser/archive/javaparser-parent-2.4.0.tar.gz
 Source0  : https://github.com/javaparser/javaparser/archive/javaparser-parent-2.4.0.tar.gz
 Source1  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/javaparser-core/2.4.0/javaparser-core-2.4.0.jar
 Source2  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/javaparser-core/2.4.0/javaparser-core-2.4.0.pom
+Source3  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/javaparser-parent/2.4.0/javaparser-parent-2.4.0.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0 GPL-3.0 LGPL-3.0
@@ -51,6 +52,9 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/j
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-core/2.4.0
 cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-core/2.4.0/javaparser-core-2.4.0.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-parent/2.4.0
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-parent/2.4.0/javaparser-parent-2.4.0.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -59,6 +63,7 @@ cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/j
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/com/github/javaparser/javaparser-core/2.4.0/javaparser-core-2.4.0.jar
 /usr/share/java/.m2/repository/com/github/javaparser/javaparser-core/2.4.0/javaparser-core-2.4.0.pom
+/usr/share/java/.m2/repository/com/github/javaparser/javaparser-parent/2.4.0/javaparser-parent-2.4.0.pom
 
 %files license
 %defattr(0644,root,root,0755)
