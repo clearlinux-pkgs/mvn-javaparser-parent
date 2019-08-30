@@ -4,7 +4,7 @@
 #
 Name     : mvn-javaparser-parent
 Version  : 2.4.0
-Release  : 2
+Release  : 3
 URL      : https://github.com/javaparser/javaparser/archive/javaparser-parent-2.4.0.tar.gz
 Source0  : https://github.com/javaparser/javaparser/archive/javaparser-parent-2.4.0.tar.gz
 Source1  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/javaparser-core/2.4.0/javaparser-core-2.4.0.jar
