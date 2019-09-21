@@ -4,7 +4,7 @@
 #
 Name     : mvn-javaparser-parent
 Version  : 2.4.0
-Release  : 4
+Release  : 5
 URL      : https://github.com/javaparser/javaparser/archive/javaparser-parent-2.4.0.tar.gz
 Source0  : https://github.com/javaparser/javaparser/archive/javaparser-parent-2.4.0.tar.gz
 Source1  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/javaparser-core/2.4.0/javaparser-core-2.4.0.jar
@@ -13,6 +13,12 @@ Source3  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/ja
 Source4  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/javaparser-core/3.6.11/javaparser-core-3.6.11.pom
 Source5  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/javaparser-parent/2.4.0/javaparser-parent-2.4.0.pom
 Source6  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/javaparser-parent/3.6.11/javaparser-parent-3.6.11.pom
+Source7  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/javaparser-symbol-solver-core/3.6.11/javaparser-symbol-solver-core-3.6.11.jar
+Source8  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/javaparser-symbol-solver-core/3.6.11/javaparser-symbol-solver-core-3.6.11.pom
+Source9  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/javaparser-symbol-solver-logic/3.6.11/javaparser-symbol-solver-logic-3.6.11.jar
+Source10  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/javaparser-symbol-solver-logic/3.6.11/javaparser-symbol-solver-logic-3.6.11.pom
+Source11  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/javaparser-symbol-solver-model/3.6.11/javaparser-symbol-solver-model-3.6.11.jar
+Source12  : https://repo.gradle.org/gradle/libs-releases/com/github/javaparser/javaparser-symbol-solver-model/3.6.11/javaparser-symbol-solver-model-3.6.11.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0 GPL-3.0 LGPL-3.0
@@ -69,6 +75,24 @@ cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/j
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-parent/3.6.11
 cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-parent/3.6.11/javaparser-parent-3.6.11.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-core/3.6.11
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-core/3.6.11/javaparser-symbol-solver-core-3.6.11.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-core/3.6.11
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-core/3.6.11/javaparser-symbol-solver-core-3.6.11.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-logic/3.6.11
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-logic/3.6.11/javaparser-symbol-solver-logic-3.6.11.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-logic/3.6.11
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-logic/3.6.11/javaparser-symbol-solver-logic-3.6.11.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-model/3.6.11
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-model/3.6.11/javaparser-symbol-solver-model-3.6.11.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-model/3.6.11
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-model/3.6.11/javaparser-symbol-solver-model-3.6.11.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -81,6 +105,12 @@ cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/com/github/javaparser/j
 /usr/share/java/.m2/repository/com/github/javaparser/javaparser-core/3.6.11/javaparser-core-3.6.11.pom
 /usr/share/java/.m2/repository/com/github/javaparser/javaparser-parent/2.4.0/javaparser-parent-2.4.0.pom
 /usr/share/java/.m2/repository/com/github/javaparser/javaparser-parent/3.6.11/javaparser-parent-3.6.11.pom
+/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-core/3.6.11/javaparser-symbol-solver-core-3.6.11.jar
+/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-core/3.6.11/javaparser-symbol-solver-core-3.6.11.pom
+/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-logic/3.6.11/javaparser-symbol-solver-logic-3.6.11.jar
+/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-logic/3.6.11/javaparser-symbol-solver-logic-3.6.11.pom
+/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-model/3.6.11/javaparser-symbol-solver-model-3.6.11.jar
+/usr/share/java/.m2/repository/com/github/javaparser/javaparser-symbol-solver-model/3.6.11/javaparser-symbol-solver-model-3.6.11.pom
 
 %files license
 %defattr(0644,root,root,0755)
